@@ -13,7 +13,7 @@
         <h1 class="titulo">Notas</h1>
         <article class="notas-content">
             <button>Crear</button>
-            <table>
+            <table id="promediosTb">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -36,10 +36,9 @@
             </table>
         </article>
         <article class="promedio-content">
-            <p>Su promedio es: 5</p>
+            <p id="promedioText">Su promedio es: 5</p>
             <br>
-            <h2>Aprobo</h2>
-            <h2>Reprobo</h2>
+            <h2 id="mensajeNota">Aprobo</h2>
         </article>
     </section>
     <section class="modal-content close-modal">
@@ -61,6 +60,7 @@
             </form>
         </article>
     </section>
+    <script src="js/promedios.js"></script>
 </body>
 
 </html>
