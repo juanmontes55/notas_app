@@ -12,7 +12,7 @@
     <section class="page-content">
         <h1 class="titulo">Notas</h1>
         <article class="notas-content">
-            <button>Crear</button>
+            <button id="crearBtn">Crear</button>
             <table id="promediosTb">
                 <thead>
                     <tr>
@@ -41,21 +41,21 @@
             <h2 id="mensajeNota">Aprobo</h2>
         </article>
     </section>
-    <section class="modal-content close-modal">
+    <section id="formularioModal" class="modal-content close-modal">
         <article class="form-content">
-            <button class="cerrar-btn">X</button>
-            <h2>Crear/Modificar</h2>
-            <form>
+            <button id="cerrarModal" class="cerrar-btn">X</button>
+            <h2 id="tituloModal">Crear/Modificar</h2>
+            <form id="formActividad" name="formularioActividad">
                 <div class="input-content">
                     <label>Nombre de la actividad:</label>
-                    <input type="text" name="actividad">
+                    <input type="text" id="actividad" name="actividad">
                 </div>
                 <div class="input-content">
                     <label>Nota:</label>
-                    <input type="number" name="nota">
+                    <input type="number" id="nota" name="nota">
                 </div>
                 <div class="button-content">
-                    <button type="button">Aceptar</button>
+                    <button id="aceptarModal" type="button">Aceptar</button>
                 </div> 
             </form>
         </article>
